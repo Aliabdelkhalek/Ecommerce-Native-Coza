@@ -14,7 +14,7 @@
     />
     <!-- Title -->
     <title>COZA STORE</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- css file -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/fonts.css" />
@@ -24,9 +24,11 @@
   </head>
   <body>
     <!-- arrow fixed -->
-    <button class="box" id="backToTop">
-      <i class="fa-solid fa-chevron-up"></i>
-    </button>
+    <div class="box" id="backToTop">
+      <a href="">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
     <!-- arrow fixed -->
 
     <!-- start Header section -->
@@ -36,8 +38,8 @@
         <div>
           <ul class="nav" id="navbar">
             <li><i class="fa-solid fa-xmark" id="close"></i></li>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -50,36 +52,30 @@
                 ><span class="counter_display">0</span></a
               >
             </li>
-             <li>
+            <li>
               <a href="#" class="nav_button"
                 ><i class="fa-regular fa-moon change-them" id="them_button"></i
               ></a>
-            </li> 
+            </li>
             <li>
               <a href="#"><i class="fa-regular fa-user" id="userIcon"></i> </a>
             </li>
             <!-- card shop -->
             <div class="cart">
-              <header><h2 class="cart_title">Your Cart</h2></header>
-              <div class="scrollbox">
-                <div class="scrollbox-inner">
-                  <div class="cart_content"></div>
-                </div>
-              </div>
+              <h2 class="cart_title">Your Cart</h2>
+              <div class="cart_content"></div>
               <!-- total -->
-              <footer>
-                <div class="total">
-                  <div class="total_title">Total</div>
-                  <div class="total_price">$0</div>
-                </div>
-                <!-- buy button -->
-                <div class="buy_btn">
-                  <a href="cards.html"
+              <div class="total">
+                <div class="total_title">Total</div>
+                <div class="total_price">$0</div>
+              </div>
+              <!-- buy button -->
+              <div class="buy_btn">
+                <a href="cards.html"
                   ><button class="btn_buy">View Cart</button></a
-                  >
-                  <button class="btn_buy">CHECK OUT</button>
-                </div>
-              </footer>
+                >
+                <button class="btn_buy">CHECK OUT</button>
+              </div>
               <!-- cart close -->
               <i class="fa-solid fa-xmark" id="close_cart"></i>
             </div>
@@ -156,32 +152,6 @@
       </div>
     </section>
     <!-- end HomePage section -->
-
-    <!-- start banner section -->
-    <section class="banner container p-70" id="bannerBox">
-      <div class="banner-box">
-        <h3>Women</h3>
-        <p>Spring 2018</p>
-        <div class="contact">
-          <h2>SHOP NOW</h2>
-        </div>
-      </div>
-      <div class="banner-box banner-box2">
-        <h3>Men</h3>
-        <p>Spring 2018</p>
-        <div class="contact">
-          <h2>SHOP NOW</h2>
-        </div>
-      </div>
-      <div class="banner-box banner-box3">
-        <h3>Accessories</h3>
-        <p>Spring 2018</p>
-        <div class="contact">
-          <h2>SHOP NOW</h2>
-        </div>
-      </div>
-    </section>
-    <!-- end  banner section -->
 
     <!-- start selectPage section -->
     <section class="allProduct p-70" id="product">
@@ -508,6 +478,14 @@
     </section>
     <!-- end selectPage section -->
 
+    <!-- start pagination section -->
+    <section class="pagtion p-70" id="pagination">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fa-solid fa-chevron-right"></i> </a>
+    </section>
+    <!-- end pagination section -->
+
     <!-- start footer section -->
     <footer class="footr p-70">
       <div class="container">
@@ -561,9 +539,7 @@
       </div>
     </footer>
     <!-- end footer section -->
-    
     <!-- js -->
-    <script src="js/sweetalert2.all.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

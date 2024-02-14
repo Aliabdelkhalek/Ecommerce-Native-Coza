@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      rel="shortcut icon"
+      href="img/icons/icon-heart-02.png"
+      type="image/x-icon"
+    />
+    <!-- Title -->
+    <title>COZA STORE</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- css file -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="font awsome/fontaswome/all.min.css" />
+    <link rel="stylesheet" href="font awsome/fontaswome/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+  <body>
+    <!-- arrow fixed -->
+    <div class="box" id="backToTop">
+      <a href="">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+    <!-- arrow fixed -->
+
+    <!-- start Header section -->
+    <section class="sec1" id="header">
+      <div class="container">
+        <a href="index.html"><img src="img/icons/logo-01.png" alt="logo" /></a>
+        <div>
+          <ul class="nav" id="navbar">
+            <li><i class="fa-solid fa-xmark" id="close"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a class="active" href="#"
+                ><i class="fa-solid fa-cart-shopping parent_counter_display" id="cart-icon"></i
+              > <span class ="counter_display">1</span></a>
+            </li>
+            <li>
+              <a href="#" class="nav_button"
+                ><i class="fa-regular fa-moon change-them" id="them_button"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-user" id="userIcon"></i>
+              </a>
+            </li>
+            <!-- card shop -->
+            <div class="cart">
+              <h2 class="cart_title">Your Cart</h2>
+              <div class="cart_content"></div>
+              <!-- total -->
+              <div class="total">
+                <div class="total_title">Total</div>
+                <div class="total_price">$0</div>
+              </div>
+              <!-- buy button -->
+              <div class="buy_btn">
+                <a href="cards.html"
+                  ><button class="btn_buy">View Cart</button></a
+                >
+                <button class="btn_buy">CHECK OUT</button>
+              </div>
+              <!-- cart close -->
+              <i class="fa-solid fa-xmark" id="close_cart"></i>
+            </div>
+          </ul>
+        </div>
+        <div class="icon_menu" id="mobile">
+          <a href="cards.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </section>
+    <!-- end Header section -->
+
+    <!-- start contact page  -->
+    <section class="about_page">
+      <h2>cards</h2>
+    </section>
+    <!-- end contact page -->
+
+    <!-- start cards section -->
+    <section class="cards p-70">
+      <div class="container" id="cartTable">
+        <label class="search_lable" for="productSearch">Search</label>
+        <input
+          type="text"
+          onkeyup="searchProduct(this.value)"
+          class="search_input"
+          name=""
+          id="productSearch"
+        />
+        <div class="row">
+          <table>
+            <thead>
+              <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total</td>
+              </tr>
+            </thead>
+            <tbody class="tBody">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- end cards section -->
+
+    <!-- end cards Total section -->
+    <section class="cards_total p-70">
+      <div class="container">
+        <div class="row">
+          <div class="cart_get_total">
+            <input type="text" placeholder="Coupon Code" />
+            <button>APPLY COUPON</button>
+            <button>UPDATE CART</button>
+          </div>
+          <div class="cart_details_get_total">
+            <h4>CART TOTAL</h4>
+            <div class="div_1">
+              <h5>SUBTOTAL:</h5>
+              <span class="totalPrice" id="subTotal">$00</span>
+            </div>
+            <div class="div_2">
+              <div>
+                <h5>SHIPPING:</h5>
+              </div>
+              <div>
+                <p>
+                  There are no shipping methods available. Please double check
+                  your address, or contact us if you need any help.
+                </p>
+                <select>
+                  <option value="">Select a Country</option>
+                  <option value="">USA</option>
+                  <option value="">UK</option>
+                </select>
+                <input type="text" placeholder="State / Country" />
+                <input type="text" placeholder="Postcode / Zip" />
+                <button>UPDATE TOTALS</button>
+              </div>
+            </div>
+            <div class="div_3">
+              <h5>Total:</h5>
+              <span class="totalPrice" id="subTotalTwo">$00</span>
+              <button>PROCEED TO CHECKOUT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end cards Total section -->
+
+    <!-- start footer section -->
+    <footer class="footr p-70">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4>CATEGORIES</h4>
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Shoes</a>
+            <a href="#">Watches</a>
+          </div>
+          <div class="col">
+            <h4>HELP</h4>
+            <a href="#">Track Order</a>
+            <a href="#">Returns</a>
+            <a href="#">Shipping</a>
+            <a href="#">FAQs</a>
+          </div>
+          <div class="col">
+            <h4>GET IN TOUCH</h4>
+            <p>
+              Any questions? Let us know in store at 8th <br />
+              floor, 379 Hudson St, New York, NY 10018 or<br />
+              call us on (+1) 96 716 6879
+            </p>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+          </div>
+          <div class="col">
+            <h4>NEWSLETTER</h4>
+            <input type="text" placeholder="email@example.com" />
+            <button>SUBSCRIBE</button>
+          </div>
+          <div class="copyright">
+            <div class="img_Pay">
+              <img src="img/icons/icon-pay-01.png" alt="" />
+              <img src="img/icons/icon-pay-02.png" alt="" />
+              <img src="img/icons/icon-pay-03.png" alt="" />
+              <img src="img/icons/icon-pay-04.png" alt="" />
+              <img src="img/icons/icon-pay-05.png" alt="" />
+            </div>
+            <p>
+              Copyright ©2022 All rights reserved | This template is made with
+              <i class="fa-regular fa-heart"></i> by <a>Colorlib</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section -->
+
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script src="js/cheackOut.js"></script>
+  </body>
+</html>
